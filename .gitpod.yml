@@ -1,0 +1,5 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+    command: |
+      php -S 0.0.0.0:5700 -t ./
