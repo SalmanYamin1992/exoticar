@@ -167,6 +167,10 @@ body {
   text-decoration: none;
   line-height: 66px;
 }
+.main-nav li a:hover {
+  color: #ff0000;
+  transition: 300ms color;
+}
 
 /** MAIN **/
 /** BANNER **/
@@ -207,26 +211,34 @@ body {
 .articles {
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(
-    -45deg,
+    -20deg,
     #ffffff 50%,
     #000000 50%,
-    #2989d8 50%,
-    #000000 51%
+    /* #2989d8 50%, */ #000000 51%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
-    -45deg,
+    -20deg,
     #ffffff 50%,
     #000000 50%,
-    #2989d8 50%,
-    #000000 51%
+    /* #2989d8 50%, */ #000000 51%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
-    135deg,
+    110deg,
     #ffffff 50%,
     #000000 50%,
     /* #2989d8 50%, */ #000000 51%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+.articles>.wrapper::after{
+  content: '.';
+  font-size: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
 article {
   width: 50%;
   float: left;
