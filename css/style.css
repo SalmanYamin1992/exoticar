@@ -132,6 +132,7 @@ body {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
+  line-height: 1.4;
 }
 .wrapper {
   width: 1120px;
@@ -211,27 +212,27 @@ body {
 .articles {
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(
-    -20deg,
+    -5deg,
     #ffffff 50%,
     #000000 50%,
     /* #2989d8 50%, */ #000000 51%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
-    -20deg,
+    -5deg,
     #ffffff 50%,
     #000000 50%,
     /* #2989d8 50%, */ #000000 51%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
-    110deg,
+    95deg,
     #ffffff 50%,
     #000000 50%,
     /* #2989d8 50%, */ #000000 51%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.articles>.wrapper::after{
-  content: '.';
+.articles > .wrapper::after {
+  content: ".";
   font-size: 0;
   height: 1px;
   width: 100%;
@@ -240,6 +241,37 @@ body {
 }
 
 article {
+  padding-top: 60px;
   width: 50%;
   float: left;
+}
+article:first-of-type {
+  padding-right: 65px;
+  box-sizing: border-box;
+  color: #000;
+}
+article:last-of-type {
+  padding-left: 65px;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+h2::after {
+  content: ".";
+  font-size: 0;
+  height: 2px;
+  width: 38px;
+  display: block;
+  background: #ca0500;
+}
+.quote {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+}
+.text {
+  font-weight: 300;
+  margin-bottom: 60px;
 }
